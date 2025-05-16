@@ -1,5 +1,1 @@
-# Integrantes:
-## Eddy Bucardo
-## Gabriel Narváez
-## Jorge Delgado
-## Steven Flores
+# El algoritmo sirve para registrar y contar las asistencias de estudiantes en diferentes secciones durante varios días. A través de preguntas al usuario, va sumando las asistencias de cada estudiante por sección y al final muestra un resumen con el total por sección y el total general de la semana.
