@@ -1,32 +1,29 @@
-# Contadores
-ocupadas_lab1 = 0
-libres_lab1 = 0
-ocupadas_lab2 = 0
-libres_lab2 = 0
+# Control de ventas en feria universitaria
 
-# LABORATORIO 1
-print("Laboratorio 1")
-contador = 1
-while contador <= 20:
-    estado = int(input("¿Computadora " + str(contador) + " ocupada (1) o libre (0)? "))
-    if estado == 1:
-        ocupadas_lab1 += 1
-    else:
-        libres_lab1 += 1
-    contador += 1
+# Variables para acumular el total general de toda la feria
+total_feria = 0
 
-# LABORATORIO 2
-print("\nLaboratorio 2")
-contador = 1
-while contador <= 20:
-    estado = int(input("¿Computadora " + str(contador) + " ocupada (1) o libre (0)? "))
-    if estado == 1:
-        ocupadas_lab2 += 1
-    else:
-        libres_lab2 += 1
-    contador += 1
+dia = 1
+while dia <= 3:  # 3 días
+    print(f"\nDía {dia}")
+    total_dia = 0
+    stand = 1
+    while stand <= 4:  # 4 stands por día
+        print(f"  Stand {stand}")
+        total_stand = 0
+        producto = 1
+        while producto <= 3:  # 3 productos por stand
+            venta = float(input(f"    Ingrese venta del producto {producto}: $"))
+            if venta < 0:
+                print("    Venta no puede ser negativa. Se toma como 0.")
+                venta = 0
+            total_stand += venta
+            producto += 1
+        print(f"    Total ventas del stand {stand}: ${total_stand}")
+        total_dia += total_stand
+        stand += 1
+    print(f"  Total del día {dia}: ${total_dia}")
+    total_feria += total_dia
+    dia += 1
 
-# RESULTADOS
-print("\nResumen:")
-print("Laboratorio 1 - Ocupadas:", ocupadas_lab1, "Libres:", libres_lab1)
-print("Laboratorio 2 - Ocupadas:", ocupadas_lab2, "Libres:", libres_lab2)
+print(f"\n💰 Total general de la feria: ${total_feria}")
