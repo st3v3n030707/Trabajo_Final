@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 # Integrantes:
 ## Eddy Bucardo
 ## Gabriel Narváez
 ## Jorge Delgado
 ## Steven Flores
-=======
-# El algoritmo permite registrar manualmente el estado de uso (ocupado o libre) de computadoras distribuidas en dos laboratorios del campus universitario. Cada laboratorio está compuesto por cinco filas de cuatro computadoras. El usuario debe ingresar si cada computadora está ocupada (1) o libre (0). Al finalizar, el programa calcula y muestra el total de computadoras ocupadas y libres por cada laboratorio.
-
->>>>>>> Flores
